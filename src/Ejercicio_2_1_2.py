@@ -37,7 +37,7 @@ def coincidePasswd(password):
 def main():
     passwd = pedirPasswd()
 
-    if coincidePasswd(passwd):
+    if coincidePasswd(passwd) == True:
         print('La contraseña introducida coincide con la guardada')
     else:
         print('La contraseña no coincide con la guardada')
