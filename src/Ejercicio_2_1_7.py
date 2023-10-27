@@ -1,5 +1,5 @@
 '''
-Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:
+Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes: 
 
 Renta 	                Tipo impositivo
 Menos de 10000€ 	            5%
