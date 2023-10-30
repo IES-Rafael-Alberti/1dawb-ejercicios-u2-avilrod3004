@@ -12,12 +12,12 @@ from src.Ejercicio_2_1_6 import comprobarInicial, comprobarSexo
     ]
 )
 
-def comprobarInicial_params(input_n, expected):
-    assert comprobarInicial(input_n) == expected
+def comprobarInicial_params(input_x, expected):
+    assert comprobarInicial(input_x) == expected
 
 
 @pytest.mark.parametrize(
-    "input_n, expected",
+    "input_y, expected",
     [
         ('HOMBRE', False),
         ('mujer', True),
@@ -26,5 +26,5 @@ def comprobarInicial_params(input_n, expected):
         ('Hombre', False)
     ]
 )
-def test_comprobarSexo_params(input_n, expected):
-    assert comprobarSexo(input_n) == expected
+def test_comprobarSexo_params(input_y, expected):
+    assert comprobarSexo(input_y) == expected

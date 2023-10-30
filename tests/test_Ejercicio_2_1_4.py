@@ -2,31 +2,27 @@ import pytest
 from src.Ejercicio_2_1_4 import calcularResto, restoCero
 
 @pytest.mark.parametrize(
-    "input_n, expected",
+    "input_x, expected",
     [
-        (1, False),
-        (18, True),
-        (100, True),
-        (5, False),
-        (17, False),
-        (125, True)
+        (1, 1),
+        (18, 0),
+        (100, 0),
+        (5, 1),
+        (17, 1),
+        (125, 1)
     ]
 )
-def test_calcularResto_params(input_n, expected):
-    assert calcularResto(input_n) == expected
+def test_calcularResto_params(input_x, expected):
+    assert calcularResto(input_x) == expected
 
 
 
 @pytest.mark.parametrize(
-    "input_n, expected",
+    "input_y, expected",
     [
         (1, False),
-        (18, True),
-        (100, True),
-        (5, False),
-        (17, False),
-        (125, True)
+        (0, True)
     ]
 )
-def test_restoCero_params(input_n, expected):
-    assert restoCero(input_n) == expected
+def test_restoCero_params(input_y, expected):
+    assert restoCero(input_y) == expected
