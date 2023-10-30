@@ -3,6 +3,12 @@ Escribir un programa para una empresa que tiene salas de juegos para todas las e
 '''
 def pedirEdad():
     '''
+    Pedir la edad de la persona y comprobar que sea numérico
+
+    Retorna
+    ------
+    int
+        dato de tipo entero con la edad de la persona
     '''
     entrada = input('Edad: ')
 
@@ -16,6 +22,12 @@ def pedirEdad():
 
 def calcularPrecio(edad: int):
     '''
+    Calcular el precio de la entrada según la edad de la persona
+
+    Retorna
+    -------
+    str
+        cadena de caracteres con el precio correspondiente
     '''
     if edad < 4:
         return 'gratis'
