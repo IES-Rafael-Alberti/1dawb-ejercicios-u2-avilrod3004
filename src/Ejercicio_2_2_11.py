@@ -7,6 +7,10 @@ def pedirPalabra():
     '''
     palabra = input('Introduce un palabra: ')
 
+    while palabra.count(' ') >= 1:
+        print('**ERROR** - INTRODUCE SOLO UNA PALABRA')
+        palabra = input('Introduce un palabra: ')
+
     return palabra
 
 
