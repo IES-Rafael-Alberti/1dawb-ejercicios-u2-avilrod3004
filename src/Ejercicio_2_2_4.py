@@ -1,9 +1,21 @@
 '''
 Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla la cuenta atrás desde ese número hasta cero separados por comas.
 '''
-# solo funciona en pytest si pone src.Ejercicio_2_2_3
-# para que funcione desde aqui hay que quitarlo...
-from src.Ejercicio_2_2_3 import pedirNumero
+def pedirNumero():
+    '''
+    '''
+    salir = False
+    while not salir:
+        entrada = int(input("Introduzca un número entero y positivo: "))
+
+        if entrada > 0:
+            salir = True
+        else:
+            print("**ERROR** NÚMERO INTRIDUCIDO NO VÁLIDO")
+
+
+    return entrada
+
 
 def cuentaAtras(num):
     '''
