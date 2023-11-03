@@ -13,6 +13,8 @@ def tablas(num):
         print(f'{i} x {num} = {i * num}')
         i += 1
 
+    return ''
+
     
 def main():
     for i in range(1, 11, 1):
